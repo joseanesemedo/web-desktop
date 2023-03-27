@@ -1,6 +1,6 @@
 import React from "react";
-import "./Toolbar.scss";
 import Clock from "react-live-clock";
+import "./Toolbar.scss";
 
 const Toolbar = () => {
   return (
@@ -14,7 +14,7 @@ const Toolbar = () => {
         <h3>Start</h3>
       </button>
       <div className="date">
-        <Clock format={"HH:mm"} ticking={true} timezone={"EU"} />
+        <Clock format={"HH:mm"} ticking={true} />
       </div>
     </div>
   );
