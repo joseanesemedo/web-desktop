@@ -1,12 +1,42 @@
 .toolbar {
-  background-color: #e14a11;
-  height: 2rem;
+  //   height: 2rem;
 
   background-color: var(--toolbar_color);
-  padding: 0.125rem 0.25rem;
+  padding: 1px;
   border: 0.125rem solid #d0d0c8;
-  border-left-color: #fff;
-  border-top-color: #fff;
-  border-right-color: #808080;
-  border-bottom-color: #808080;
+  border-top-color: var(--toolbar_border_color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .date {
+    padding: 0.25rem 1rem;
+    border: 0.0625rem solid #d0d0c8;
+    border-left-color: #808080;
+    border-top-color: #808080;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    background-color: #c8c8c3;
+
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.0625rem 0.125rem;
+
+    &__start {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      .start__logo {
+        height: 1.25rem;
+      }
+
+      h3 {
+        font-size: 0.875rem;
+      }
+    }
+  }
 }

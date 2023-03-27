@@ -1,5 +1,6 @@
 :root {
   --toolbar_color: #d0d0c8;
+  --toolbar_border_color: #fff;
 }
 
 * {
@@ -12,4 +13,28 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.btn {
+  display: block;
+  appearance: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.125rem 0.25rem;
+  cursor: pointer;
+
+  background-color: #d0d0c8;
+
+  border: 0.125rem solid #d0d0c8;
+  border-left-color: #fff;
+  border-top-color: #fff;
+  border-right-color: #333;
+  border-bottom-color: #333;
+
+  &:active {
+    border-left-color: #333;
+    border-top-color: #333;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+  }
 }

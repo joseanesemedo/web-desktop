@@ -1,5 +1,6 @@
 .main {
-  background-color: #2ef;
+  background: linear-gradient(135deg, #f807ff, #05faff);
+
   height: 100%;
   width: 100%;
 
@@ -7,10 +8,4 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-
-  .tes {
-    background-color: #fff;
-    height: 300px;
-    width: 500px;
-  }
 }
