@@ -1,0 +1,16 @@
+.main {
+  background-color: #2ef;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  .tes {
+    background-color: #fff;
+    height: 300px;
+    width: 500px;
+  }
+}
