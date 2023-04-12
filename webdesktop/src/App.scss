@@ -18,6 +18,18 @@ body {
   display: flex;
   flex-direction: column;
 
+  .noise {
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media2.giphy.com/media/iF3M9gPPCdulq/200.webp?cid=ecf05e47hznq3oarosdiji9vja60hgw10kue8ydtz3gdwotc&rid=200.webp&ct=g");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    opacity: 0.02;
+  }
+
   .overlay {
     pointer-events: none;
     position: fixed;
