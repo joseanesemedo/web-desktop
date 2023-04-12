@@ -2,7 +2,7 @@ import React from "react";
 import Clock from "react-live-clock";
 import "./Toolbar.scss";
 
-const Toolbar = () => {
+const Toolbar = ({ setEffect, effect }) => {
   return (
     <div className="toolbar">
       <button className="btn btn__start" type="button" aria-haspopup="menu">
@@ -13,8 +13,14 @@ const Toolbar = () => {
         />
         <h3>Start</h3>
       </button>
-      <div className="date">
-        <Clock format={"HH:mm"} ticking={true} />
+      <div className="notification__area">
+        <button
+          className={`btn btn__effect ${effect ? "btn__effect--active" : null}`}
+          onClick={() => setEffect(!effect)}
+        ></button>
+        <div className="date">
+          <Clock format={"HH:mm"} ticking={true} />
+        </div>
       </div>
     </div>
   );

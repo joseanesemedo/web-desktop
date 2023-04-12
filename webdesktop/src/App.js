@@ -16,7 +16,7 @@ function App() {
       ) : null}
 
       <Main />
-      <Toolbar />
+      <Toolbar setEffect={setEffect} effect={effect} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .toolbar {
-  //   height: 2rem;
+  height: 2rem;
 
   background-color: var(--toolbar_color);
   padding: 1px;
@@ -9,18 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .date {
-    padding: 0.25rem 1rem;
-    border: 0.0625rem solid #d0d0c8;
-    border-left-color: #808080;
-    border-top-color: #808080;
-    border-right-color: #fff;
-    border-bottom-color: #fff;
-    background-color: #c8c8c3;
-
-    font-size: 0.75rem;
-  }
 
   .btn {
     padding: 0.0625rem 0.125rem;
@@ -38,6 +26,38 @@
       h3 {
         font-size: 0.875rem;
       }
+    }
+  }
+
+  .notification__area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .btn__effect {
+      height: 15px;
+      width: 20px;
+    }
+    .btn__effect--active {
+      background-color: rgb(161, 163, 202);
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(1, 6, 1) rgb(199, 199, 223) rgb(199, 199, 223)
+        rgb(1, 6, 1);
+      box-shadow: rgb(91, 87, 161) 1px 1px 0px 1px inset,
+        rgb(164, 167, 200) -1px -1px 0px 1px inset;
+    }
+
+    .date {
+      padding: 0.25rem 1rem;
+      border: 0.0625rem solid #d0d0c8;
+      border-left-color: #808080;
+      border-top-color: #808080;
+      border-right-color: #fff;
+      border-bottom-color: #fff;
+      background-color: #c8c8c3;
+
+      font-size: 0.75rem;
     }
   }
 }
