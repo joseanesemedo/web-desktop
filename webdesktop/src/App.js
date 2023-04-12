@@ -1,5 +1,5 @@
 import "./App.scss";
-import Toolbar from "./components/Toolbar";
+import Toolbar from "./components/Taskbar";
 import Main from "./components/Main";
 import { useState } from "react";
 

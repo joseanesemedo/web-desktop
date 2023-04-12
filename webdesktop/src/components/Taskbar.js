@@ -1,6 +1,6 @@
 import React from "react";
 import Clock from "react-live-clock";
-import "./Toolbar.scss";
+import "./Taskbar.scss";
 
 const Toolbar = ({ setEffect, effect }) => {
   return (
