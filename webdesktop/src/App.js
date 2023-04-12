@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./styles/App.scss";
 import Toolbar from "./components/Taskbar";
 import Main from "./components/Main";
 import { useState } from "react";
