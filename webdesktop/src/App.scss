@@ -1,7 +1,4 @@
-:root {
-  --toolbar_color: #d0d0c8;
-  --toolbar_border_color: #fff;
-}
+@use "./colors/" as c;
 
 * {
   margin: 0;
@@ -57,19 +54,19 @@ body {
   cursor: pointer;
   font-family: inherit;
 
-  background-color: #d0d0c8;
+  background-color: var(--btn_bg);
 
-  border: 2px solid #d0d0c8;
-  border-left-color: #fff;
-  border-top-color: #fff;
-  border-right-color: #333;
-  border-bottom-color: #333;
+  border: 2px solid var(--btn_bg);
+  border-left-color: var(--btn_border_light);
+  border-top-color: var(--btn_border_light);
+  border-right-color: var(--btn_border_dark);
+  border-bottom-color: var(--btn_border_dark);
 
   &:active {
-    border-left-color: #333;
-    border-top-color: #333;
-    border-right-color: #fff;
-    border-bottom-color: #fff;
+    border-left-color: var(--btn_border_dark);
+    border-top-color: var(--btn_border_dark);
+    border-right-color: var(--btn_border_light);
+    border-bottom-color: var(--btn_border_light);
   }
 }
 

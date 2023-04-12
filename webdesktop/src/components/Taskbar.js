@@ -9,7 +9,6 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         className="btn btn__start flex__center"
         type="button"
         aria-pressed="false"
-        aria-haspopup="menu"
         aria-label="start button"
       >
         <img
@@ -24,7 +23,6 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
           <span>CRT</span>
           <button
             aria-label="toggle crt effect button"
-            type="button"
             aria-pressed={crtEffect}
             className={`btn btn__effect ${
               crtEffect ? "btn__effect--active" : null
