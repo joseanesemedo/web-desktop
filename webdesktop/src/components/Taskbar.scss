@@ -1,4 +1,4 @@
-.toolbar {
+.taskbar {
   height: 2rem;
 
   background-color: var(--toolbar_color);
@@ -6,16 +6,12 @@
   border: 0.125rem solid #d0d0c8;
   border-top-color: var(--toolbar_border_color);
 
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 
   .btn {
     padding: 0.0625rem 0.125rem;
 
     &__start {
-      display: flex;
-      align-items: center;
       gap: 0.25rem;
 
       .start__logo {
@@ -30,22 +26,29 @@
   }
 
   .notification__area {
-    display: flex;
-    align-items: center;
     gap: 10px;
 
-    .btn__effect {
-      height: 15px;
-      width: 20px;
-    }
-    .btn__effect--active {
-      background-color: rgb(161, 163, 202);
-      border-style: solid;
-      border-width: 2px;
-      border-color: rgb(1, 6, 1) rgb(199, 199, 223) rgb(199, 199, 223)
-        rgb(1, 6, 1);
-      box-shadow: rgb(91, 87, 161) 1px 1px 0px 1px inset,
-        rgb(164, 167, 200) -1px -1px 0px 1px inset;
+    .crt {
+      gap: 2px;
+
+      span {
+        font-size: 0.6rem;
+        text-shadow: -1px -1px 1px #fff;
+      }
+
+      .btn__effect {
+        height: 15px;
+        width: 20px;
+      }
+      .btn__effect--active {
+        background-color: rgb(161, 163, 202);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(1, 6, 1) rgb(199, 199, 223) rgb(199, 199, 223)
+          rgb(1, 6, 1);
+        box-shadow: rgb(91, 87, 161) 1px 1px 0px 1px inset,
+          rgb(164, 167, 200) -1px -1px 0px 1px inset;
+      }
     }
 
     .date {

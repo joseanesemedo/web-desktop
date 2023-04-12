@@ -4,11 +4,11 @@ import Main from "./components/Main";
 import { useState } from "react";
 
 function App() {
-  const [effect, setEffect] = useState(true);
+  const [crtEffect, setCrtEffect] = useState(true);
 
   return (
     <div className="app">
-      {effect ? (
+      {crtEffect ? (
         <>
           <div className="noise"></div>
           <div className="overlay"></div>
@@ -16,7 +16,7 @@ function App() {
       ) : null}
 
       <Main />
-      <Toolbar setEffect={setEffect} effect={effect} />
+      <Toolbar setCrtEffect={setCrtEffect} crtEffect={crtEffect} />
     </div>
   );
 }
