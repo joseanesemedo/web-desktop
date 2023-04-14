@@ -14,7 +14,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         <img
           className="start__logo"
           src="https://win98icons.alexmeub.com/icons/png/windows_slanted-1.png"
-          alt=""
+          alt="windows 98 logo"
         />
         <h3>Start</h3>
       </button>

@@ -14,7 +14,6 @@ function App() {
           <div className="overlay"></div>
         </>
       ) : null}
-
       <Main />
       <Toolbar setCrtEffect={setCrtEffect} crtEffect={crtEffect} />
     </div>
