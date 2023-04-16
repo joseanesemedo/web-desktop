@@ -10,7 +10,9 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
   return (
     <div className="taskbar flex__center">
       <button
-        className="btn btn__start flex__center"
+        className={`btn btn__start flex__center ${
+          dropdown ? "btn__active" : ""
+        }`}
         type="button"
         aria-label="start button"
         aria-pressed={dropdown ? "true" : "false"}

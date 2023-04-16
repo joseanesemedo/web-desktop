@@ -62,7 +62,7 @@ body {
   border-right-color: var(--btn_border_dark);
   border-bottom-color: var(--btn_border_dark);
 
-  &:active {
+  &__active {
     border-left-color: var(--btn_border_dark);
     border-top-color: var(--btn_border_dark);
     border-right-color: var(--btn_border_light);
