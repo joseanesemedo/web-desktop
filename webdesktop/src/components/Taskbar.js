@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Clock from "react-live-clock";
 import { menuItems } from "./menuData";
 import "./Taskbar.scss";
-import Dropdown from "./Dropdown";
+import Menu from "./Menu";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
   const [dropdown, setDropdown] = useState(false);
@@ -24,7 +24,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
           alt="windows 98 logo"
         />
         <h3>Start</h3>
-        <Dropdown submenus={menuItems} dropdown={dropdown} />
+        <Menu submenus={menuItems} dropdown={dropdown} />
       </button>
       <div className="notification__area flex__center">
         <div className="crt flex__center">
