@@ -39,12 +39,6 @@
       }
       .btn__effect--active {
         background-color: #a6a6a6;
-        border-style: solid;
-        border-width: 2px;
-        // border-color: #010601 #c7c7df #c7c7df #010601;
-        // box-shadow: #5a5a5a 1px 1px 0px 1px inset,
-        //   #5a5a5a -1px -1px 0px 1px inset;
-
         border-left-color: var(--btn_border_dark);
         border-top-color: var(--btn_border_dark);
         border-right-color: var(--btn_border_light);
