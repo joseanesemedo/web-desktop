@@ -1,19 +1,7 @@
 export const menuItems = [
   {
-    title: "web design",
-    url: "web-design",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/shutdown.png",
-    imgAlt: "",
-  },
-  {
-    title: "web development",
-    url: "web-dev",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/shutdown.png",
-    imgAlt: "",
-  },
-  {
-    title: "SEO",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/shutdown.png",
+    title: "Documents",
+    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
     imgAlt: "",
     submenu: [
       {
@@ -25,5 +13,17 @@ export const menuItems = [
         url: "php",
       },
     ],
+  },
+  {
+    title: "Help",
+    url: "web-dev",
+    imgURL: "https://www.windows93.net/c/sys/skins/w93/help.png",
+    imgAlt: "",
+  },
+  {
+    title: "Fullscreen",
+    url: "web-design",
+    imgURL: "https://www.windows93.net/c/sys/skins/w93/shutdown.png",
+    imgAlt: "",
   },
 ];
