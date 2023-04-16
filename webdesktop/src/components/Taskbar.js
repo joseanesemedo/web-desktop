@@ -1,5 +1,7 @@
 import React from "react";
 import Clock from "react-live-clock";
+import { menuItems } from "./menuItems";
+import MenuItem from "./MenuItem";
 import "./Taskbar.scss";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
@@ -18,6 +20,11 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         />
         <h3>Start</h3>
       </button>
+      <ul className="menus">
+        {menuItems.map((menu, index) => {
+          return <MenuItem items={menu} key={index} />;
+        })}
+      </ul>
       <div className="notification__area flex__center">
         <div className="crt flex__center">
           <span>CRT</span>
