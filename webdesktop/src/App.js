@@ -1,5 +1,5 @@
 import "./styles/App.scss";
-import Toolbar from "./components/Taskbar";
+import Toolbar from "./components/Taskbar/Taskbar";
 import Main from "./components/Main";
 import { useState } from "react";
 
@@ -7,7 +7,13 @@ function App() {
   const [crtEffect, setCrtEffect] = useState(true);
 
   return (
-    <div className="app">
+    <div
+      className="app"
+      onContextMenu={(e) => {
+        e.preventDefault();
+        console.log("Right Click");
+      }}
+    >
       {crtEffect ? (
         <>
           <div className="noise"></div>
