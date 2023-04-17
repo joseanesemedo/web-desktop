@@ -9,7 +9,7 @@
   .dropdown {
     position: absolute;
     bottom: 100%;
-    left: 5px;
+    left: 0.2rem;
 
     font-size: 0.875rem;
     min-width: 10rem;
@@ -25,7 +25,7 @@
     .dropdown__submenu {
       position: absolute;
       left: 100%;
-      bottom: -80%;
+      bottom: 10%;
     }
 
     display: none;
@@ -39,6 +39,7 @@
       font-size: 12px;
 
       .menu__btn {
+        padding: 0.25rem;
         display: block;
         font-size: inherit;
         color: inherit;
@@ -52,9 +53,8 @@
         div {
           display: flex;
           align-items: center;
+          gap: 0.25rem;
         }
-
-        padding: 0.25rem;
 
         &:hover {
           background-color: #0090e4;
