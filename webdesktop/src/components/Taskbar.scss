@@ -10,7 +10,6 @@
     position: absolute;
     bottom: 100%;
     left: 5px;
-
     font-size: 0.875rem;
     min-width: 10rem;
 
@@ -37,8 +36,7 @@
 
       h1 {
         font-size: 0.8rem;
-
-        top: 50%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%) rotate(-90deg);
         position: absolute;
@@ -50,13 +48,12 @@
       width: 100%;
 
       .menu__items {
-        position: relative;
         font-size: 12px;
 
         .menu__btn {
           padding: 0.25rem;
           display: block;
-          color: inherit;
+          color: #000;
           width: 100%;
 
           display: flex;
@@ -96,7 +93,7 @@
   .notification__area {
     gap: 10px;
 
-    .crt {
+    .crt__btn {
       gap: 5px;
 
       span {
