@@ -2,26 +2,31 @@ import React from "react";
 
 const Dropdown = ({ submenus, dropdown, setDropdown }) => {
   return (
-    <ul className={`dropdown ${dropdown ? "show" : ""}`}>
-      {submenus.map((items, index) => (
-        <li className="menu__items" key={index}>
-          <button
-            className="menu__btn"
-            type="button"
-            onClick={() => setDropdown((prev) => !prev)}
-          >
-            <div>
-              <img
-                className="menu__item_img"
-                src={items.imgURL}
-                alt={items.imgAlt}
-              />
-              {items.title}
-            </div>
-          </button>
-        </li>
-      ))}
-    </ul>
+    <div className={`menu__container ${dropdown ? "show" : ""}`}>
+      <span>
+        <h1>Webdesktop</h1>
+      </span>
+      <ul className="menu">
+        {submenus.map((items, index) => (
+          <li className="menu__items" key={index}>
+            <button
+              className="menu__btn"
+              type="button"
+              onClick={() => setDropdown(false)}
+            >
+              <div>
+                <img
+                  className="menu__item_img"
+                  src={items.imgURL}
+                  alt={items.imgAlt}
+                />
+                {items.title}
+              </div>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

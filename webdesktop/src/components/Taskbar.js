@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Clock from "react-live-clock";
+import Dropdown from "./Dropdown";
 import { menuData } from "./menuData";
 import "./Taskbar.scss";
-import Dropdown from "./Dropdown";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
   const [dropdown, setDropdown] = useState(false);
@@ -27,6 +27,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
   return (
     <div className="taskbar flex__center">
       <button
+        ref={ref}
         className={`btn btn__start flex__center ${
           dropdown ? "btn__active" : ""
         }`}
@@ -34,7 +35,6 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         aria-label="start button"
         aria-pressed={dropdown ? "true" : "false"}
         aria-haspopup="menu"
-        aria-expanded={dropdown ? "true" : "false"}
         onClick={() => setDropdown((prev) => !prev)}
       >
         <img
@@ -45,7 +45,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         <h3>Start</h3>
       </button>
 
-      <div ref={ref}>
+      <div>
         <Dropdown
           submenus={menuData}
           dropdown={dropdown}

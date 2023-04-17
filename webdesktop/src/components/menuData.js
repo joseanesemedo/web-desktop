@@ -3,16 +3,6 @@ export const menuData = [
     title: "Documents",
     imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
     imgAlt: "",
-    submenu: [
-      {
-        title: "NodeJS",
-        imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
-      },
-      {
-        title: "PHP",
-        imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
-      },
-    ],
   },
   {
     title: "Help",
@@ -27,7 +17,7 @@ export const menuData = [
   },
   {
     title: "Fullscreen",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/shutdown.png",
+    imgURL: "https://win98icons.alexmeub.com/icons/png/shut_down_cool-5.png",
     imgAlt: "",
   },
 ];
