@@ -4,16 +4,21 @@ export const menuData = [
     imgURL: "https://win98icons.alexmeub.com/icons/png/windows_slanted-1.png",
     submenu: [
       {
+        title: "Internet Explorer",
+        imgURL: "https://win98icons.alexmeub.com/icons/png/msie1-1.png",
+        imgAlt: "",
+      },
+      {
         title: "Documents",
         imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
         imgAlt: "",
         submenu: [
           {
-            title: "NodeJS",
+            title: "Music",
             imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
           },
           {
-            title: "PHP",
+            title: "Gallery",
             imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
           },
         ],
