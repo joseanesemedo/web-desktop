@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import Clock from "react-live-clock";
-import { menuItems } from "./menuData";
+import { menuData } from "./menuData";
 import "./Taskbar.scss";
-import Menu from "./Menu";
+import MenuItems from "./MenuItems";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
-  const [dropdown, setDropdown] = useState(false);
+  const depthLevel = 0;
 
   return (
     <div className="taskbar flex__center">
-      <button
+      <ul className="menus">
+        {menuData.map((menu, index) => {
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+        })}
+      </ul>
+
+      {/* <button
         className={`btn btn__start flex__center ${
           dropdown ? "btn__active" : ""
         }`}
@@ -26,8 +32,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
           alt="windows 98 logo"
         />
         <h3>Start</h3>
-        <Menu submenus={menuItems} dropdown={dropdown} />
-      </button>
+      </button> */}
       <div className="notification__area flex__center">
         <div className="crt flex__center">
           <span>CRT</span>
