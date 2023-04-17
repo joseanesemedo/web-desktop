@@ -47,14 +47,14 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
 
       <div>
         <Menu
-          submenus={menuData}
+          menuData={menuData}
           dropdown={dropdown}
           setDropdown={setDropdown}
         />
       </div>
 
       <div className="notification__area flex__center">
-        <div className="crt flex__center">
+        <div className="crt__btn flex__center">
           <span>CRT</span>
           <button
             aria-label="toggle crt effect button"
