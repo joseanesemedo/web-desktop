@@ -1,14 +1,27 @@
 import React from "react";
-import MenuItems from "./MenuItems";
 
-const Dropdown = ({ submenus, dropdown, depthLevel }) => {
-  depthLevel = depthLevel + 1;
-  const dropdownClass = depthLevel > 1 ? "dropdown__submenu" : "";
-
+const Dropdown = ({ submenus, dropdown }) => {
   return (
-    <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : ""}`}>
-      {submenus.map((submenu, index) => (
-        <MenuItems items={submenu} key={index} depthLevel={depthLevel} />
+    <ul className={`dropdown ${dropdown ? "show" : ""}`}>
+      {submenus.map((items, index) => (
+        <li className="menu__items" key={index}>
+          <button
+            className="menu__btn"
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded={dropdown ? "true" : "false"}
+            // onClick={() => setDropdown((prev) => !prev)}
+          >
+            <div>
+              <img
+                className="menu__item_img"
+                src={items.imgURL}
+                alt={items.imgAlt}
+              />
+              {items.title}
+            </div>
+          </button>
+        </li>
       ))}
     </ul>
   );

@@ -22,12 +22,6 @@
     border-right-color: var(--btn_border_dark);
     border-bottom-color: var(--btn_border_dark);
 
-    .dropdown__submenu {
-      position: absolute;
-      left: 100%;
-      bottom: -80%;
-    }
-
     display: none;
 
     &.show {

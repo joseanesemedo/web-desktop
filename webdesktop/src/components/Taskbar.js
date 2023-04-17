@@ -1,21 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Clock from "react-live-clock";
 import { menuData } from "./menuData";
 import "./Taskbar.scss";
-import MenuItems from "./MenuItems";
+import Dropdown from "./Dropdown";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
-  const depthLevel = 0;
   const [dropdown, setDropdown] = useState(false);
 
   return (
     <div className="taskbar flex__center">
-      {/* <ul className="menus">
-        {menuData.map((menu, index) => (
-          <MenuItems items={menu} key={index} depthLevel={depthLevel} />
-        ))}
-      </ul> */}
-
       <button
         className={`btn btn__start flex__center ${
           dropdown ? "btn__active" : ""
@@ -34,6 +27,8 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         />
         <h3>Start</h3>
       </button>
+      <Dropdown submenus={menuData} dropdown={dropdown} />
+
       <div className="notification__area flex__center">
         <div className="crt flex__center">
           <span>CRT</span>

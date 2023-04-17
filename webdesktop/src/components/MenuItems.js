@@ -46,6 +46,7 @@ const MenuItems = ({ items, depthLevel }) => {
             submenus={items.submenu}
             dropdown={dropdown}
             depthLevel={depthLevel}
+            setDropdown={setDropdown}
           />
         </>
       ) : (
