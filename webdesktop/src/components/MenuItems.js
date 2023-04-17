@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Dropdown from "./Dropdown";
 
-import "./MenuItems.scss";
-
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
 
@@ -28,18 +26,21 @@ const MenuItems = ({ items, depthLevel }) => {
       {items.submenu ? (
         <>
           <button
+            className="menu__btn"
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            <img
-              className="menu__item_img"
-              src={items.imgURL}
-              alt={items.imgAlt}
-            />
-            {items.title}{" "}
-            {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+            <div>
+              <img
+                className="menu__item_img"
+                src={items.imgURL}
+                alt={items.imgAlt}
+              />
+              {items.title}
+            </div>
+            {depthLevel > 0 ? <span>&raquo;</span> : null}
           </button>
           <Dropdown
             submenus={items.submenu}
@@ -48,14 +49,16 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <a href={items.url}>
-          <img
-            className="menu__item_img"
-            src={items.imgURL}
-            alt={items.imgAlt}
-          />
-          <span>{items.title}</span>
-        </a>
+        <button className="menu__btn" type="button">
+          <div>
+            <img
+              className="menu__item_img"
+              src={items.imgURL}
+              alt={items.imgAlt}
+            />
+            {items.title}
+          </div>
+        </button>
       )}
     </li>
   );
