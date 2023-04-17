@@ -25,9 +25,8 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
   }, [dropdown]);
 
   return (
-    <div className="taskbar flex__center">
+    <div className="taskbar flex__center" ref={ref}>
       <button
-        ref={ref}
         className={`btn btn__start flex__center ${
           dropdown ? "btn__active" : ""
         }`}
@@ -45,13 +44,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         <h3>Start</h3>
       </button>
 
-      <div>
-        <Menu
-          menuData={menuData}
-          dropdown={dropdown}
-          setDropdown={setDropdown}
-        />
-      </div>
+      <Menu menuData={menuData} dropdown={dropdown} setDropdown={setDropdown} />
 
       <div className="notification__area flex__center">
         <div className="crt__btn flex__center">
