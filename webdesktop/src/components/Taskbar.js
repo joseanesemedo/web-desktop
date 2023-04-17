@@ -7,6 +7,23 @@ import Dropdown from "./Dropdown";
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
   const [dropdown, setDropdown] = useState(false);
 
+  let ref = useRef();
+
+  useEffect(() => {
+    const handler = (event) => {
+      if (dropdown && ref.current && !ref.current.contains(event.target)) {
+        setDropdown(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler);
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
+    };
+  }, [dropdown]);
+
   return (
     <div className="taskbar flex__center">
       <button
@@ -27,7 +44,14 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         />
         <h3>Start</h3>
       </button>
-      <Dropdown submenus={menuData} dropdown={dropdown} />
+
+      <div ref={ref}>
+        <Dropdown
+          submenus={menuData}
+          dropdown={dropdown}
+          setDropdown={setDropdown}
+        />
+      </div>
 
       <div className="notification__area flex__center">
         <div className="crt flex__center">

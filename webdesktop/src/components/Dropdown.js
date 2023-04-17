@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dropdown = ({ submenus, dropdown }) => {
+const Dropdown = ({ submenus, dropdown, setDropdown }) => {
   return (
     <ul className={`dropdown ${dropdown ? "show" : ""}`}>
       {submenus.map((items, index) => (
@@ -8,9 +8,7 @@ const Dropdown = ({ submenus, dropdown }) => {
           <button
             className="menu__btn"
             type="button"
-            aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            // onClick={() => setDropdown((prev) => !prev)}
+            onClick={() => setDropdown((prev) => !prev)}
           >
             <div>
               <img
