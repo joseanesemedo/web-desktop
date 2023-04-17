@@ -10,18 +10,18 @@ export const menuData = [
     imgAlt: "",
   },
   {
-    title: "Documents",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
+    title: "Explorer",
+    imgURL: "https://win98icons.alexmeub.com/icons/png/world-3.png",
     imgAlt: "",
   },
   {
-    title: "Documents",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
+    title: "???",
+    imgURL: "https://win98icons.alexmeub.com/icons/png/msagent_file-1.png",
     imgAlt: "",
   },
   {
-    title: "Documents",
-    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
+    title: "Gallery",
+    imgURL: "https://win98icons.alexmeub.com/icons/png/wia_img_color-0.png",
     imgAlt: "",
   },
   {
