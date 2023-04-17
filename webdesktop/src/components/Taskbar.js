@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Clock from "react-live-clock";
-import Dropdown from "./Dropdown";
+import Menu from "./Menu";
 import { menuData } from "./menuData";
 import "./Taskbar.scss";
 
@@ -46,7 +46,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
       </button>
 
       <div>
-        <Dropdown
+        <Menu
           submenus={menuData}
           dropdown={dropdown}
           setDropdown={setDropdown}

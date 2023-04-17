@@ -1,22 +1,30 @@
 import React from "react";
-// import "./Menu.scss";
 
-const Dropdown = ({ submenus, dropdown }) => {
+const Dropdown = ({ submenus, dropdown, setDropdown }) => {
   return (
-    <ul className={`menu ${dropdown ? "show" : ""}`}>
-      {submenus.map((submenu, index) => (
-        <li key={index} className="menu__items">
-          <a href={submenu.url}>
-            <img
-              className="menu__item_img"
-              src={submenu.imgURL}
-              alt={submenu.imgAlt}
-            />
-            <span>{submenu.title}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <div className={`menu__container ${dropdown ? "show" : ""}`}>
+      <span>
+        <h1>Webdesktop</h1>
+      </span>
+      <ul className="menu">
+        {submenus.map((items, index) => (
+          <li className="menu__items" key={index}>
+            <button
+              className="menu__btn"
+              type="button"
+              onClick={() => setDropdown(false)}
+            >
+              <img
+                className="menu__item_img"
+                src={items.imgURL}
+                alt={items.imgAlt}
+              />
+              {items.title}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

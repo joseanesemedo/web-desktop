@@ -5,6 +5,26 @@ export const menuData = [
     imgAlt: "",
   },
   {
+    title: "Blog",
+    imgURL: "https://win98icons.alexmeub.com/icons/png/shell_window6-0.png",
+    imgAlt: "",
+  },
+  {
+    title: "Documents",
+    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
+    imgAlt: "",
+  },
+  {
+    title: "Documents",
+    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
+    imgAlt: "",
+  },
+  {
+    title: "Documents",
+    imgURL: "https://www.windows93.net/c/sys/skins/w93/documents.png",
+    imgAlt: "",
+  },
+  {
     title: "Help",
     imgURL: "https://www.windows93.net/c/sys/skins/w93/help.png",
     imgAlt: "",
