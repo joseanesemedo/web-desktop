@@ -7,13 +7,7 @@ function App() {
   const [crtEffect, setCrtEffect] = useState(true);
 
   return (
-    <div
-      className="app"
-      onContextMenu={(e) => {
-        e.preventDefault();
-        console.log("Right Click");
-      }}
-    >
+    <div className="app">
       {crtEffect ? (
         <>
           <div className="noise"></div>
