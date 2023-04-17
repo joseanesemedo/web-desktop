@@ -14,6 +14,7 @@
     left: 5px;
     font-size: 0.875rem;
     min-width: 10rem;
+    z-index: 99999999999;
 
     @include m.box-border();
 
