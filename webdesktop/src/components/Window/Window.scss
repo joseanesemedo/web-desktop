@@ -1,13 +1,52 @@
-.window {
-  background-color: #fff;
-  min-height: 200px;
-  min-width: 200px;
+@use "../../styles/mixins" as m;
 
-  background-color: #d0d0c8;
+.window {
+  //   min-height: 200px;
+  min-width: 200px;
   padding: 0.125rem;
-  border: 0.125rem solid #d0d0c8;
-  border-left-color: #fff;
-  border-top-color: #fff;
+  max-width: 600px;
+  //   width: 100%;
+
+  @include m.box-border();
   border-right-color: #808080;
   border-bottom-color: #808080;
+
+  .title__bar {
+    min-height: 1.25rem;
+    background: linear-gradient(to right, #5b73ff, #ff60dd);
+    padding: 0.125rem;
+
+    .title__bar__name {
+      gap: 0.625rem;
+
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      h1 {
+        font-size: 0.75rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .menu__bar {
+    height: 1rem;
+  }
+
+  .media__container {
+    border: 1px inset #d0d0c8;
+    border-left-color: #404040;
+    border-top-color: #404040;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    background-color: var(--taskbar_color);
+    width: 100%;
+    overflow-y: auto;
+
+    img {
+      width: 100%;
+    }
+  }
 }
