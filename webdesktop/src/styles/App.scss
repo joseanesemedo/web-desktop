@@ -25,7 +25,7 @@ body {
     background-image: url("https://media2.giphy.com/media/iF3M9gPPCdulq/200.webp?cid=ecf05e47hznq3oarosdiji9vja60hgw10kue8ydtz3gdwotc&rid=200.webp&ct=g");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 100;
+    z-index: 99999999999;
     opacity: 0.02;
   }
 
@@ -44,7 +44,7 @@ body {
 
     opacity: 0.6;
     background-size: auto 0.25rem;
-    z-index: 100;
+    z-index: 99999999999;
   }
 }
 

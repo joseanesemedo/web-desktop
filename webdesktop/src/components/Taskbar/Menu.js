@@ -14,7 +14,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
       <ul className="menu">
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("documents")}
           >
@@ -28,7 +28,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("blog")}
           >
@@ -42,7 +42,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("explorer")}
           >
@@ -56,7 +56,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("???")}
           >
@@ -70,7 +70,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("gallery")}
           >
@@ -84,7 +84,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("help")}
           >
@@ -98,7 +98,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("about")}
           >
@@ -112,7 +112,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </li>
         <li className="menu__items">
           <button
-            className="menu__btn"
+            className="menu__item"
             type="button"
             onClick={() => handleOnClick("Fullscreen")}
           >

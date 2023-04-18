@@ -12,9 +12,8 @@
     position: absolute;
     bottom: 100%;
     left: 5px;
-    font-size: 0.875rem;
     min-width: 10rem;
-    z-index: 99999999999;
+    z-index: 9999999;
 
     @include m.box-border();
 
@@ -50,7 +49,7 @@
       .menu__items {
         font-size: 0.75rem;
 
-        .menu__btn {
+        .menu__item {
           padding: 0.25rem;
           display: block;
           color: #000;
