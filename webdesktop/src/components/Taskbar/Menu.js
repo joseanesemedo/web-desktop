@@ -114,7 +114,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           <button
             className="menu__item"
             type="button"
-            onClick={() => handleOnClick("Fullscreen")}
+            onClick={() => handleOnClick("fullscreen")}
           >
             <img
               className="menu__item_img"

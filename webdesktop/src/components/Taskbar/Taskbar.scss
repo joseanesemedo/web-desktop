@@ -65,7 +65,7 @@
           }
 
           .menu__item_img {
-            height: 20px;
+            height: 1.25rem;
           }
         }
       }
@@ -76,8 +76,7 @@
     font-weight: 700;
     padding: 0.0625rem 0.125rem;
     letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
+
     gap: 0.25rem;
 
     background-color: var(--btn_bg);

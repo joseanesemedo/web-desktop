@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.scss";
+import Window from "./Window/Window";
 // import { useGlitch } from "react-powerglitch";
 
 const Main = () => {
+  const [zIndex, setZindex] = useState(1);
+
+  const stackNote = (ref) => {
+    ref.current.style.zIndex = zIndex;
+    setZindex((zIndex) => zIndex + 1);
+  };
+
   // const glitch = useGlitch({
   //   createContainers: true,
   //   hideOverflow: false,
@@ -30,7 +38,7 @@ const Main = () => {
   // });
 
   return (
-    <div className="main">
+    <main className="main">
       <div className="section__icons">
         {/* <div className="test" ref={glitch.ref}>
           <img
@@ -41,7 +49,15 @@ const Main = () => {
           <span>Documents</span>
         </div> */}
       </div>
-    </div>
+      <Window stackNote={stackNote} title={"Kirby"}>
+        <img
+          src={
+            "https://i.pinimg.com/originals/34/73/40/347340d292eb9a2a2f69dcb74d0fadaf.gif"
+          }
+          alt=""
+        />
+      </Window>
+    </main>
   );
 };
 
