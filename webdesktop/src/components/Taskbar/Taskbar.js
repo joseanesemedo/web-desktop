@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Clock from "react-live-clock";
 import Menu from "./Menu";
-import { menuData } from "./menuData";
 import "./Taskbar.scss";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
@@ -44,7 +43,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         <h3>Start</h3>
       </button>
 
-      <Menu menuData={menuData} dropdown={dropdown} setDropdown={setDropdown} />
+      <Menu dropdown={dropdown} setDropdown={setDropdown} />
 
       <div className="notification__area flex__center">
         <div className="crt__btn flex__center">
