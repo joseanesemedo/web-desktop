@@ -4,14 +4,14 @@ import Menu from "./Menu";
 import "./Taskbar.scss";
 
 const Toolbar = ({ setCrtEffect, crtEffect }) => {
-  const [dropdown, setDropdown] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   let ref = useRef();
 
   useEffect(() => {
     const handler = (event) => {
-      if (dropdown && ref.current && !ref.current.contains(event.target)) {
-        setDropdown(false);
+      if (openMenu && ref.current && !ref.current.contains(event.target)) {
+        setOpenMenu(false);
       }
     };
     document.addEventListener("mousedown", handler);
@@ -21,19 +21,19 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
       document.removeEventListener("mousedown", handler);
       document.removeEventListener("touchstart", handler);
     };
-  }, [dropdown]);
+  }, [openMenu]);
 
   return (
     <div className="taskbar flex__center" ref={ref}>
       <button
         className={`btn btn__start flex__center ${
-          dropdown ? "btn__active" : ""
+          openMenu ? "btn__active" : ""
         }`}
         type="button"
         aria-label="start button"
-        aria-pressed={dropdown ? "true" : "false"}
+        aria-pressed={openMenu ? "true" : "false"}
         aria-haspopup="menu"
-        onClick={() => setDropdown((prev) => !prev)}
+        onClick={() => setOpenMenu((prev) => !prev)}
       >
         <img
           className="start__logo"
@@ -43,7 +43,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         <h3>Start</h3>
       </button>
 
-      <Menu dropdown={dropdown} setDropdown={setDropdown} />
+      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
       <div className="notification__area flex__center">
         <div className="crt__btn flex__center">

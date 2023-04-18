@@ -1,13 +1,13 @@
 import React from "react";
 
-const Menu = ({ dropdown, setDropdown }) => {
+const Menu = ({ openMenu, setOpenMenu }) => {
   const handleOnClick = (windownName) => {
     console.log(windownName);
-    setDropdown(false);
+    setOpenMenu(false);
   };
 
   return (
-    <div className={`menu__container ${dropdown ? "show" : ""}`}>
+    <div className={`menu__container ${openMenu ? "show" : ""}`}>
       <span>
         <h1>Webdesktop</h1>
       </span>
