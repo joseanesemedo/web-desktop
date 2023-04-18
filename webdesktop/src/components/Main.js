@@ -52,7 +52,7 @@ const Main = () => {
       <Window stackNote={stackNote} title={"Kirby"} windowType={"image"}>
         <img
           src={
-            "https://i.pinimg.com/originals/54/93/75/549375f924b4929c79fea5f552c98f38.gif"
+            "https://i.pinimg.com/originals/34/73/40/347340d292eb9a2a2f69dcb74d0fadaf.gif"
           }
           alt=""
         />

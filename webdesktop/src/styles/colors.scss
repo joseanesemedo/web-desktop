@@ -1,9 +1,23 @@
 :root {
-  --taskbar_color: #d0d0c8;
+  // taskbar
+  --taskbar_bg: #d0d0c8;
   --taskbar_border_color: #fff;
 
+  // menu
+  --menu_sidebar: linear-gradient(to bottom, #0090e4, #ff60dd);
+  --menu_item_hover: #0090e4;
+
+  --border_darker: #808080;
+
+  // btn
   --btn_bg: #d0d0c8;
+  --btn_bg_active: #a6a6a6;
   --btn_border_dark: #333;
   --btn_border_light: #fff;
-  --menu_sidebar: linear-gradient(to bottom, #0090e4, #ff60dd);
+
+  // window
+  --window_bar: linear-gradient(to right, #5b73ff, #ff60dd);
+  --window_bg: #d0d0c8;
+  --window_border_dark: #404040;
+  --window_border_light: #fff;
 }

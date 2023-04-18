@@ -1,6 +1,6 @@
 @mixin box-border() {
-  background-color: var(--taskbar_color);
-  border: 2px solid var(--taskbar_color);
+  background-color: var(--taskbar_bg);
+  border: 2px solid var(--taskbar_bg);
   border-top-color: var(--taskbar_border_color);
   border-left-color: var(--taskbar_border_color);
   border-right-color: var(--btn_border_dark);

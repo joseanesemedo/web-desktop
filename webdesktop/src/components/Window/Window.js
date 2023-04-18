@@ -40,6 +40,7 @@ const Window = ({ title, children, windowType }) => {
         </div>
         <div className="menu__bar"></div>
         <div className="media__container">{children}</div>
+        <div className="menu__bar"></div>
       </div>
     </Draggable>
   );

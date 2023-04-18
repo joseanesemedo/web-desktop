@@ -20,7 +20,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           >
             <img
               className="menu__item_img"
-              src="https://www.windows93.net/c/sys/skins/w93/documents.png"
+              src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-5.png"
               alt=""
             />
             Documents
