@@ -130,7 +130,7 @@
         border-bottom-color: var(--btn_border_dark);
 
         &--active {
-          background-color: #a6a6a6;
+          background-color: var(--btn_bg_active);
           border-left-color: var(--btn_border_dark);
           border-top-color: var(--btn_border_dark);
           border-right-color: var(--btn_border_light);
@@ -140,14 +140,19 @@
     }
 
     .date {
-      padding: 0.25rem 1rem;
+      padding: 0.25rem 0.5rem;
       border: 0.0625rem solid #d0d0c8;
-      border-left-color: #808080;
-      border-top-color: #808080;
+      border-left-color: var(--border_darker);
+      border-top-color: var(--border_darker);
       border-right-color: #fff;
       border-bottom-color: #fff;
       background-color: #c8c8c3;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
+      gap: 0.2rem;
+
+      .date__img {
+        height: 1.25rem;
+      }
     }
   }
 }

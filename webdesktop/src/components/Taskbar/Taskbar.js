@@ -55,7 +55,12 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
             onClick={() => setCrtEffect(!crtEffect)}
           ></button>
         </div>
-        <div className="date">
+        <div className="date flex__center">
+          <img
+            className="date__img"
+            src="https://win98icons.alexmeub.com/icons/png/clock-1.png"
+            alt="clock"
+          />
           <Clock format={"HH:mm"} ticking={true} />
         </div>
       </div>
