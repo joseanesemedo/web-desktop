@@ -26,12 +26,12 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
   return (
     <div className="taskbar flex__center" ref={ref}>
       <button
-        className={`btn btn__start flex__center ${
-          openMenu ? "btn__active" : ""
+        className={`btn__start flex__center ${
+          openMenu && "btn__start__active"
         }`}
         type="button"
         aria-label="start button"
-        aria-pressed={openMenu ? "true" : "false"}
+        aria-pressed={openMenu}
         aria-haspopup="menu"
         onClick={() => setOpenMenu((prev) => !prev)}
       >
@@ -51,9 +51,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
           <button
             aria-label="toggle crt effect button"
             aria-pressed={crtEffect}
-            className={`btn btn__effect ${
-              crtEffect ? "btn__effect--active" : null
-            }`}
+            className={`btn btn__effect ${crtEffect && "btn__effect--active"}`}
             onClick={() => setCrtEffect(!crtEffect)}
           ></button>
         </div>

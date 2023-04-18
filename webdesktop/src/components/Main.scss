@@ -20,5 +20,14 @@
     height: 600px;
     width: 80px;
     border: 2px dashed;
+
+    .test {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+
+      .test__img {
+        height: 60px;
+      }
+    }
   }
 }

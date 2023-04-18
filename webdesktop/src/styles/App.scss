@@ -48,39 +48,12 @@ body {
   }
 }
 
-.btn {
-  display: block;
-  appearance: none;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 0.125rem 0.25rem;
-  cursor: pointer;
-  font-family: inherit;
-
-  background-color: var(--btn_bg);
-
-  border: 2px solid var(--btn_bg);
-  border-left-color: var(--btn_border_light);
-  border-top-color: var(--btn_border_light);
-  border-right-color: var(--btn_border_dark);
-  border-bottom-color: var(--btn_border_dark);
-
-  &__active {
-    border-left-color: var(--btn_border_dark);
-    border-top-color: var(--btn_border_dark);
-    border-right-color: var(--btn_border_light);
-    border-bottom-color: var(--btn_border_light);
-  }
-}
-
 .flex__center {
   display: flex;
   align-items: center;
 }
 
 button {
-  display: flex;
-  align-items: center;
   color: inherit;
   font-size: inherit;
   border: none;

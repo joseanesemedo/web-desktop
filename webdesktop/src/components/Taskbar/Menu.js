@@ -7,9 +7,9 @@ const Menu = ({ openMenu, setOpenMenu }) => {
   };
 
   return (
-    <div className={`menu__container ${openMenu ? "show" : ""}`}>
+    <div className={`menu__container ${openMenu && "show"}`}>
       <span>
-        <h1>Webdesktop</h1>
+        <h1>Windows 99</h1>
       </span>
       <ul className="menu">
         <li className="menu__items">
