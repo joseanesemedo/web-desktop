@@ -40,16 +40,20 @@ const Window = ({ title, children, stackNote, windowType }) => {
             {windowType === "message" ? null : (
               <img src={windowImg} alt="" className="icon" />
             )}
-
             <h1>{title}</h1>
           </div>
           <div className="buttons__container">
-            <button className="btn " aria-label="close button">
-              <span className="icon">_</span>
-            </button>
-            <button className="btn " aria-label="close button">
-              <span className="icon">X</span>
-            </button>
+            {windowType === "message" ? null : (
+              <>
+                <button className="btn " aria-label="close button">
+                  <span className="icon">_</span>
+                </button>
+                <button className="btn " aria-label="close button">
+                  <span className="icon">X</span>
+                </button>
+              </>
+            )}
+
             <button className="btn " aria-label="close button">
               <span className="icon">X</span>
             </button>

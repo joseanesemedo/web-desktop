@@ -7,16 +7,27 @@
   min-width: 18.75rem;
 
   .message__container {
-    padding: 2rem;
+    padding: 1rem;
+    background-color: var(--window_bg);
 
-    .message__text {
+    .message__text__container {
+      margin-bottom: 1rem;
+      gap: 1rem;
+
+      .message__icon {
+        height: 40px;
+        filter: drop-shadow(0.2rem 0.2rem rgba(0, 0, 0, 0.3));
+      }
+      .message__text {
+        font-size: 1rem;
+      }
     }
     .buttons {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
 
       .btn__action {
-        padding: 1px 0.9375rem;
+        padding: 0.0625rem 1.25rem;
       }
     }
   }

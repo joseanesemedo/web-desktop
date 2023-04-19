@@ -1,16 +1,17 @@
 @use "../../styles/mixins" as m;
 
 .window {
+  background-color: var(--window_bg);
   padding: 0.125rem;
   max-width: 600px;
 
-  @include m.box-border();
-  border-right-color: var(--border_darker);
-  border-bottom-color: var(--border_darker);
+  border: 2px solid var(--window_border_light);
+  border-right-color: var(--window_border_dark);
+  border-bottom-color: var(--window_border_dark);
 
   .title__bar {
-    min-height: 1.25rem;
     background: var(--window_bar);
+    min-height: 1.25rem;
     padding: 0.125rem;
     justify-content: space-between;
 
@@ -25,47 +26,47 @@
       h1 {
         font-size: 0.875rem;
         letter-spacing: 0.0625rem;
-        color: #fff;
+        color: var(--window_title_color);
       }
     }
-  }
 
-  .buttons__container {
-    padding: 0.125rem;
-    display: flex;
-    align-items: center;
-    gap: 0.0625rem;
+    .buttons__container {
+      padding: 0.125rem;
+      display: flex;
+      align-items: center;
+      gap: 0.0625rem;
 
-    .btn {
-      padding: 1px 4px;
-      background-color: var(--window_bg);
-      border: 0.125rem solid #fff;
-      border-right-color: var(--border_darker);
-      border-bottom-color: var(--border_darker);
+      .btn {
+        padding: 1px 4px;
+        background-color: var(--window_bg);
+        border: 0.125rem solid var(--btn_border_light);
+        border-right-color: var(--btn_border_dark);
+        border-bottom-color: var(--btn_border_dark);
 
-      font-weight: 700;
-      font-size: 0.6rem;
+        font-weight: 700;
+        font-size: 0.6rem;
 
-      &:active {
-        border-left-color: var(--border_darker);
-        border-top-color: var(--border_darker);
-        border-right-color: var(--btn_border_light);
-        border-bottom-color: var(--btn_border_light);
+        &:active {
+          border-left-color: var(--btn_border_dark);
+          border-top-color: var(--btn_border_dark);
+          border-right-color: var(--btn_border_light);
+          border-bottom-color: var(--btn_border_light);
+        }
       }
     }
   }
 
   .menu__bar {
+    background-color: var(--window_bg);
     height: 1rem;
   }
 
   .media__container {
-    border: 1px inset var(--window_bg);
-    border-left-color: var(--window_border_dark);
-    border-top-color: var(--window_border_dark);
+    background-color: var(--window_bg_darker);
+    border: 1px inset var(--window_border_dark);
     border-right-color: var(--window_border_light);
     border-bottom-color: var(--window_border_light);
-    background-color: var(--window_bg);
+
     width: 100%;
     overflow-y: auto;
 
