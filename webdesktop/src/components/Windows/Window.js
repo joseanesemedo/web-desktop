@@ -37,7 +37,10 @@ const Window = ({ title, children, stackNote, windowType }) => {
       <div className="window" ref={noteRef}>
         <div className="title__bar flex__center">
           <div className="title__bar__name flex__center">
-            <img src={windowImg} alt="" className="icon" />
+            {windowType === "message" ? null : (
+              <img src={windowImg} alt="" className="icon" />
+            )}
+
             <h1>{title}</h1>
           </div>
           <div className="buttons__container">
@@ -52,9 +55,7 @@ const Window = ({ title, children, stackNote, windowType }) => {
             </button>
           </div>
         </div>
-        <div className="menu__bar"></div>
-        <div className="media__container">{children}</div>
-        <div className="menu__bar"></div>
+        {children}
       </div>
     </Draggable>
   );
