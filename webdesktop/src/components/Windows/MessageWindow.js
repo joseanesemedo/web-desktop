@@ -4,7 +4,12 @@ import "./MessageWindow.scss";
 
 const MessageWindow = ({ title, stackNote }) => {
   return (
-    <Window windowType={"message"} title={title} stackNote={stackNote}>
+    <Window
+      classes={"message__window"}
+      windowType={"message"}
+      title={title}
+      stackNote={stackNote}
+    >
       <div className="message__container">
         <div className="message__text__container flex__center">
           <img

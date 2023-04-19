@@ -1,11 +1,14 @@
 .main {
   background-image: url(https://assets.codepen.io/7237686/wallpaper.jpg?format=auto);
+  // background-image: url(https://aconfuseddragon.neocities.org/art/city-1.png);
 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+
+  overflow: hidden;
 
   display: flex;
   align-items: center;

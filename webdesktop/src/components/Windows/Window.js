@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Draggable from "react-draggable";
 import "./Window.scss";
 
-const Window = ({ title, children, stackNote, windowType }) => {
+const Window = ({ title, classes, children, stackNote, windowType }) => {
   const noteRef = useRef();
 
   function handleOnClick(e) {
@@ -33,8 +33,9 @@ const Window = ({ title, children, stackNote, windowType }) => {
       handle=".title__bar"
       tabIndex="-1"
       onMouseDown={handleOnClick}
+      defaultPosition={{ x: 0, y: 0 }}
     >
-      <div className="window" ref={noteRef}>
+      <div className={`window ${classes}`} ref={noteRef}>
         <div className="title__bar flex__center">
           <div className="title__bar__name flex__center">
             {windowType === "message" ? null : (

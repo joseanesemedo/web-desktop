@@ -50,18 +50,18 @@ const Main = () => {
           <span>Documents</span>
         </div> */}
       </div>
-      <PopupWindow stackNote={stackNote} title={"Kirby"} windowType={"image"}>
+      <PopupWindow stackNote={stackNote} title={"Fish"} windowType={"image"}>
         <img
           src={
-            "https://i.pinimg.com/originals/34/73/40/347340d292eb9a2a2f69dcb74d0fadaf.gif"
+            "https://i.pinimg.com/originals/1f/dd/1d/1fdd1dd87c03ceb8d4af123882e9be4a.gif"
           }
           alt=""
         />
       </PopupWindow>
-      <PopupWindow stackNote={stackNote} title={"Kirby"} windowType={"image"}>
+      <PopupWindow stackNote={stackNote} title={"Fish"} windowType={"image"}>
         <img
           src={
-            "https://i.pinimg.com/originals/54/93/75/549375f924b4929c79fea5f552c98f38.gif"
+            "https://i.pinimg.com/originals/33/00/37/330037e99d9692d6b6a290296a33bdca.gif"
           }
           alt=""
         />

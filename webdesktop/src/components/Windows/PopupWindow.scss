@@ -1,0 +1,23 @@
+.popup__window {
+  max-width: 600px;
+
+  .menu__bar {
+    background-color: var(--window_bg);
+    height: 0.8rem;
+  }
+
+  .media__container {
+    background-color: var(--window_bg_darker);
+    border: 1px inset var(--window_border_dark);
+    border-right-color: var(--window_border_light);
+    border-bottom-color: var(--window_border_light);
+
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
