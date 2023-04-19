@@ -57,6 +57,14 @@ const Main = () => {
           alt=""
         />
       </Window>
+      <Window stackNote={stackNote} title={"Kirby"} windowType={"image"}>
+        <img
+          src={
+            "https://i.pinimg.com/originals/54/93/75/549375f924b4929c79fea5f552c98f38.gif"
+          }
+          alt=""
+        />
+      </Window>
     </main>
   );
 };

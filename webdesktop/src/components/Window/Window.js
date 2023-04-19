@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import Draggable from "react-draggable";
 import "./Window.scss";
 
-const Window = ({ title, children, windowType }) => {
+const Window = ({ title, children, stackNote, windowType }) => {
+  const noteRef = useRef();
+
   function handleOnClick(e) {
     e.preventDefault();
+    stackNote(noteRef);
   }
 
   const types = [
@@ -31,7 +34,7 @@ const Window = ({ title, children, windowType }) => {
       tabIndex="-1"
       onMouseDown={handleOnClick}
     >
-      <div className="window">
+      <div className="window" ref={noteRef}>
         <div className="title__bar">
           <div className="title__bar__name flex__center">
             <img src={windowImg} alt="" className="icon" />
