@@ -1,0 +1,23 @@
+@use "../../styles/mixins" as m;
+
+.window {
+  padding: 0.125rem;
+  max-width: 37.5rem;
+  min-height: 150px;
+  min-width: 18.75rem;
+
+  .message__container {
+    padding: 2rem;
+
+    .message__text {
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+
+      .btn__action {
+        padding: 1px 0.9375rem;
+      }
+    }
+  }
+}

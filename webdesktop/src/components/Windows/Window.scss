@@ -1,11 +1,8 @@
 @use "../../styles/mixins" as m;
 
 .window {
-  //   min-height: 200px;
-  // min-width: 200px;
   padding: 0.125rem;
   max-width: 600px;
-  //   width: 100%;
 
   @include m.box-border();
   border-right-color: var(--border_darker);
@@ -15,6 +12,7 @@
     min-height: 1.25rem;
     background: var(--window_bar);
     padding: 0.125rem;
+    justify-content: space-between;
 
     .title__bar__name {
       gap: 0.625rem;
@@ -25,8 +23,34 @@
       }
 
       h1 {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.0625rem;
         color: #fff;
+      }
+    }
+  }
+
+  .buttons__container {
+    padding: 0.125rem;
+    display: flex;
+    align-items: center;
+    gap: 0.0625rem;
+
+    .btn {
+      padding: 1px 4px;
+      background-color: var(--window_bg);
+      border: 0.125rem solid #fff;
+      border-right-color: var(--border_darker);
+      border-bottom-color: var(--border_darker);
+
+      font-weight: 700;
+      font-size: 0.6rem;
+
+      &:active {
+        border-left-color: var(--border_darker);
+        border-top-color: var(--border_darker);
+        border-right-color: var(--btn_border_light);
+        border-bottom-color: var(--btn_border_light);
       }
     }
   }

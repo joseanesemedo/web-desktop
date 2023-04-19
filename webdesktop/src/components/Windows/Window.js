@@ -35,10 +35,21 @@ const Window = ({ title, children, stackNote, windowType }) => {
       onMouseDown={handleOnClick}
     >
       <div className="window" ref={noteRef}>
-        <div className="title__bar">
+        <div className="title__bar flex__center">
           <div className="title__bar__name flex__center">
             <img src={windowImg} alt="" className="icon" />
             <h1>{title}</h1>
+          </div>
+          <div className="buttons__container">
+            <button className="btn " aria-label="close button">
+              <span className="icon">_</span>
+            </button>
+            <button className="btn " aria-label="close button">
+              <span className="icon">X</span>
+            </button>
+            <button className="btn " aria-label="close button">
+              <span className="icon">X</span>
+            </button>
           </div>
         </div>
         <div className="menu__bar"></div>
