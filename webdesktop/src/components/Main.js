@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Main.scss";
-import Window from "./Window/Window";
+import Window from "./Windows/Window";
+import MessageWindow from "./Windows/MessageWindow";
 // import { useGlitch } from "react-powerglitch";
 
 const Main = () => {
@@ -65,6 +66,13 @@ const Main = () => {
           alt=""
         />
       </Window>
+      {/* <MessageWindow
+        stackNote={stackNote}
+        title={"Base error"}
+        windowType={"image"}
+      >
+        dsd
+      </MessageWindow> */}
     </main>
   );
 };

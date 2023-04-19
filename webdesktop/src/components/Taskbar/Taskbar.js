@@ -26,7 +26,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
   return (
     <div className="taskbar flex__center" ref={ref}>
       <button
-        className={`btn__start flex__center ${
+        className={`btn btn__start flex__center ${
           openMenu && "btn__start__active"
         }`}
         type="button"
