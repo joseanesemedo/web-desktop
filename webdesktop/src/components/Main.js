@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Main.scss";
-import Window from "./Windows/Window";
+import PopupWindow from "./Windows/PopupWindow";
 import MessageWindow from "./Windows/MessageWindow";
 // import { useGlitch } from "react-powerglitch";
 
@@ -50,29 +50,29 @@ const Main = () => {
           <span>Documents</span>
         </div> */}
       </div>
-      <Window stackNote={stackNote} title={"Kirby"} windowType={"image"}>
+      <PopupWindow stackNote={stackNote} title={"Kirby"} windowType={"image"}>
         <img
           src={
             "https://i.pinimg.com/originals/34/73/40/347340d292eb9a2a2f69dcb74d0fadaf.gif"
           }
           alt=""
         />
-      </Window>
-      <Window stackNote={stackNote} title={"Kirby"} windowType={"image"}>
+      </PopupWindow>
+      <PopupWindow stackNote={stackNote} title={"Kirby"} windowType={"image"}>
         <img
           src={
             "https://i.pinimg.com/originals/54/93/75/549375f924b4929c79fea5f552c98f38.gif"
           }
           alt=""
         />
-      </Window>
-      {/* <MessageWindow
+      </PopupWindow>
+      <MessageWindow
         stackNote={stackNote}
         title={"Base error"}
         windowType={"image"}
       >
         dsd
-      </MessageWindow> */}
+      </MessageWindow>
     </main>
   );
 };
