@@ -20,7 +20,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           >
             <img
               className="menu__item_img"
-              src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-5.png"
+              src="https://assets.codepen.io/7237686/folder.png?format=auto"
               alt=""
             />
             Documents
@@ -76,7 +76,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           >
             <img
               className="menu__item_img"
-              src="https://win98icons.alexmeub.com/icons/png/wia_img_color-0.png"
+              src="https://assets.codepen.io/7237686/gallery.png?format=auto"
               alt=""
             />
             Gallery
