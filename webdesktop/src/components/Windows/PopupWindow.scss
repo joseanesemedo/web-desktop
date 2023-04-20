@@ -1,5 +1,8 @@
 .popup__window {
-  max-width: 600px;
+  width: 500px;
+  // max-height: 00px;
+  // height: 100%;
+  // width: 100%;
 
   .menu__bar {
     background-color: var(--window_bg);
@@ -12,8 +15,7 @@
     border-right-color: var(--window_border_light);
     border-bottom-color: var(--window_border_light);
 
-    // height: 100%;
-    // width: 100%;
+    max-height: 700px;
     overflow-y: auto;
 
     img {

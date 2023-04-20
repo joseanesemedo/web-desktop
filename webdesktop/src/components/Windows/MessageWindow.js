@@ -2,13 +2,15 @@ import React from "react";
 import Window from "./Window";
 import "./MessageWindow.scss";
 
-const MessageWindow = ({ title, stackNote }) => {
+const MessageWindow = ({ title, stackNote, x, y }) => {
   return (
     <Window
       classes={"message__window"}
       windowType={"message"}
       title={title}
       stackNote={stackNote}
+      x={x}
+      y={y}
     >
       <div className="message__container">
         <div className="message__text__container flex__center">

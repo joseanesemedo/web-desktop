@@ -50,7 +50,13 @@ const Main = () => {
           <span>Documents</span>
         </div> */}
       </div>
-      <PopupWindow stackNote={stackNote} title={"Fish"} windowType={"image"}>
+      <PopupWindow
+        stackNote={stackNote}
+        title={"Fish"}
+        windowType={"image"}
+        x={520}
+        y={55}
+      >
         <img
           src={
             "https://i.pinimg.com/originals/1f/dd/1d/1fdd1dd87c03ceb8d4af123882e9be4a.gif"
@@ -58,7 +64,13 @@ const Main = () => {
           alt=""
         />
       </PopupWindow>
-      <PopupWindow stackNote={stackNote} title={"Fish"} windowType={"image"}>
+      <PopupWindow
+        stackNote={stackNote}
+        title={"Fish"}
+        windowType={"image"}
+        x={500}
+        y={-50}
+      >
         <img
           src={
             "https://i.pinimg.com/originals/33/00/37/330037e99d9692d6b6a290296a33bdca.gif"
@@ -70,9 +82,23 @@ const Main = () => {
         stackNote={stackNote}
         title={"Base error"}
         windowType={"image"}
+        x={1000}
+        y={-270}
       >
         dsd
       </MessageWindow>
+      <PopupWindow
+        stackNote={stackNote}
+        title={"Fish"}
+        windowType={"image"}
+        x={50}
+        y={-690}
+      >
+        <img
+          src={"https://aconfuseddragon.neocities.org/art/city-1.png"}
+          alt=""
+        />
+      </PopupWindow>
     </main>
   );
 };

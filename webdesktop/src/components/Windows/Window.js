@@ -2,12 +2,13 @@ import React, { useRef } from "react";
 import Draggable from "react-draggable";
 import "./Window.scss";
 
-const Window = ({ title, classes, children, stackNote, windowType }) => {
+const Window = ({ title, classes, children, stackNote, windowType, x, y }) => {
   const noteRef = useRef();
 
   function handleOnClick(e) {
     e.preventDefault();
     stackNote(noteRef);
+    console.log(e);
   }
 
   const types = [
@@ -42,7 +43,7 @@ const Window = ({ title, classes, children, stackNote, windowType }) => {
       handle=".title__bar"
       tabIndex="-1"
       onMouseDown={handleOnClick}
-      // defaultPosition={{ x: 0, y: 0 }}
+      defaultPosition={{ x: x, y: y }}
     >
       <div className={`window ${classes}`} ref={noteRef}>
         <div className="title__bar flex__center">
