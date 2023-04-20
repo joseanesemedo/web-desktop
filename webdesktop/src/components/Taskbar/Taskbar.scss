@@ -5,6 +5,7 @@
   border-top-color: var(--taskbar_border_lighter);
   justify-content: space-between;
   position: relative;
+  height: 2.5rem;
 
   .menu__container {
     background-color: var(--taskbar_bg);
@@ -47,11 +48,9 @@
       width: 100%;
 
       .menu__items {
-        font-size: 0.875rem;
-
         .menu__item {
+          font-size: 16px;
           padding: 0.25rem;
-          display: block;
           color: var(--menu_text_color);
           width: 100%;
 
@@ -90,7 +89,7 @@
       height: 1.5rem;
     }
 
-    h3 {
+    h1 {
       font-size: 1rem;
     }
   }

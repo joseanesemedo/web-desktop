@@ -27,13 +27,22 @@ const Window = ({ title, classes, children, stackNote, windowType }) => {
 
   const windowImg = types.find((t) => t.type === windowType)?.src;
 
+  // let x, y;
+
+  // function getRandomInt() {
+  //   return Math.floor(Math.random() * 900);
+  // }
+
+  // x = getRandomInt();
+  // y = getRandomInt();
+
   return (
     <Draggable
       bounds=".main"
       handle=".title__bar"
       tabIndex="-1"
       onMouseDown={handleOnClick}
-      defaultPosition={{ x: 0, y: 0 }}
+      // defaultPosition={{ x: 0, y: 0 }}
     >
       <div className={`window ${classes}`} ref={noteRef}>
         <div className="title__bar flex__center">

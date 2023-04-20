@@ -1,9 +1,10 @@
 @use "../../styles/mixins" as m;
 
 .message__window {
-  max-width: 37.5rem;
+  max-width: 350px;
   min-height: 9.375rem;
-  min-width: 20rem;
+  max-height: 100px;
+  min-width: 220px;
 
   .message__container {
     padding: 1rem;

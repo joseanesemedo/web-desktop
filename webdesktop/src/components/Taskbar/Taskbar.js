@@ -40,7 +40,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
           src="https://win98icons.alexmeub.com/icons/png/windows_slanted-1.png"
           alt="windows 98 logo"
         />
-        <h3>Start</h3>
+        <h1>Start</h1>
       </button>
 
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
