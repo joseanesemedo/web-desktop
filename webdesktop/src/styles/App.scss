@@ -7,13 +7,13 @@
 }
 
 @font-face {
-  font-family: "MyFont";
-  src: local("MyFont"),
+  font-family: "pixelFont";
+  src: local("pixelFont"),
     url(../resources/fonts/Windows-Regular.woff) format("woff");
 }
 
 body {
-  font-family: MyFont, Arial, Helvetica, sans-serif;
+  font-family: pixelFont, Arial, Helvetica, sans-serif;
 }
 
 .app {

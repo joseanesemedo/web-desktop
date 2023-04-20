@@ -1,5 +1,12 @@
+@use "../../styles/mixins" as m;
+
 .popup__window {
   width: 500px;
+
+  @include m.breakpoint-down(medium) {
+    // max-width: 350px;
+    width: 300px;
+  }
   // max-height: 00px;
   // height: 100%;
   // width: 100%;
@@ -15,8 +22,14 @@
     border-right-color: var(--window_border_light);
     border-bottom-color: var(--window_border_light);
 
-    max-height: 700px;
     overflow-y: auto;
+
+    max-height: 600px;
+
+    @include m.breakpoint-down(medium) {
+      // max-width: 350px;
+      max-height: 300px;
+    }
 
     img {
       width: 100%;

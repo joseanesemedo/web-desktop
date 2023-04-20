@@ -6,3 +6,16 @@
   border-right-color: var(--window_border_dark);
   border-bottom-color: var(--window_border_dark);
 }
+
+$breakpoints-down: (
+  "extra_small": 36rem,
+  "small": 46.875rem,
+  "medium": 65rem,
+  "large": 1560px,
+);
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
