@@ -30,12 +30,12 @@ const Window = ({ title, classes, children, stackNote, windowType, x, y }) => {
 
   // let x, y;
 
-  // function getRandomInt() {
-  //   return Math.floor(Math.random() * 900);
+  // function getRandomInt(max) {
+  //   return Math.floor(Math.random() * max);
   // }
 
-  // x = getRandomInt();
-  // y = getRandomInt();
+  // x = getRandomInt(50);
+  // y = getRandomInt(700);
 
   return (
     <Draggable
@@ -43,7 +43,7 @@ const Window = ({ title, classes, children, stackNote, windowType, x, y }) => {
       handle=".title__bar"
       tabIndex="-1"
       onMouseDown={handleOnClick}
-      defaultPosition={{ x: x, y: y }}
+      defaultPosition={{ x: 0, y: 0 }}
     >
       <div className={`window ${classes}`} ref={noteRef}>
         <div className="title__bar flex__center">

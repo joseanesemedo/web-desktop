@@ -82,23 +82,11 @@ const Main = () => {
         stackNote={stackNote}
         title={"Base error"}
         windowType={"image"}
-        x={1000}
-        y={-270}
+        x={300}
+        y={-150}
       >
         dsd
       </MessageWindow>
-      <PopupWindow
-        stackNote={stackNote}
-        title={"Fish"}
-        windowType={"image"}
-        x={50}
-        y={-690}
-      >
-        <img
-          src={"https://aconfuseddragon.neocities.org/art/city-1.png"}
-          alt=""
-        />
-      </PopupWindow>
     </main>
   );
 };
