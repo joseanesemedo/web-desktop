@@ -59,6 +59,14 @@ const Main = () => {
           alt=""
         />
       </PopupWindow>
+      <PopupWindow stackNote={stackNote} title={"Fish"} windowType={"image"}>
+        <img
+          src={
+            "https://i.pinimg.com/originals/33/00/37/330037e99d9692d6b6a290296a33bdca.gif"
+          }
+          alt=""
+        />
+      </PopupWindow>
       <MessageWindow
         stackNote={stackNote}
         title={"Base error"}

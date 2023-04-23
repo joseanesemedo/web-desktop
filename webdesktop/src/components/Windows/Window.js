@@ -1,14 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Draggable from "react-draggable";
 import "./Window.scss";
 
 const Window = ({ title, classes, children, stackNote, windowType }) => {
+  const [maximize, setMaximize] = useState(false);
+
   const noteRef = useRef();
 
   function handleOnClick(e) {
     e.preventDefault();
     stackNote(noteRef);
-    console.log(e);
   }
 
   const types = [
@@ -34,9 +35,12 @@ const Window = ({ title, classes, children, stackNote, windowType }) => {
       handle=".title__bar"
       tabIndex="-1"
       onMouseDown={handleOnClick}
-      positionOffset={{ x: "50%", y: "50%" }}
+      // positionOffset={{ x: "50%", y: "50%" }}
     >
-      <div className={`window ${classes}`} ref={noteRef}>
+      <div
+        className={`window ${classes} ${maximize && "maximize"}`}
+        ref={noteRef}
+      >
         <div className="title__bar flex__center">
           <div className="title__bar__name flex__center">
             {windowType === "message" ? null : (
@@ -54,7 +58,11 @@ const Window = ({ title, classes, children, stackNote, windowType }) => {
                     className="icon"
                   />
                 </button>
-                <button className="btn " aria-label="maximize button">
+                <button
+                  className="btn "
+                  aria-label="maximize button"
+                  onClick={() => setMaximize(!maximize)}
+                >
                   <img
                     src="https://assets.codepen.io/7237686/maximize_1.png?format=auto"
                     alt="maximize window"
