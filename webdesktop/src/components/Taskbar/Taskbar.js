@@ -58,7 +58,7 @@ const Toolbar = ({ setCrtEffect, crtEffect }) => {
         <div className="date flex__center">
           <img
             className="date__img"
-            src="https://win98icons.alexmeub.com/icons/png/clock-1.png"
+            src="https://assets.codepen.io/7237686/clock.png?format=auto"
             alt="clock"
           />
           <Clock format={"HH:mm"} ticking={true} />

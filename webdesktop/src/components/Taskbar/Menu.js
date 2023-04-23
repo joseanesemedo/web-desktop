@@ -118,7 +118,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           >
             <img
               className="menu__item_img"
-              src="https://win98icons.alexmeub.com/icons/png/shut_down_cool-5.png"
+              src="https://assets.codepen.io/7237686/pc.png?format=auto"
               alt=""
             />
             Fullscreen
