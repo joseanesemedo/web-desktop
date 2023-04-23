@@ -1,11 +1,11 @@
-@mixin box-border() {
-  background-color: var(--taskbar_bg);
-  border: 2px solid var(--taskbar_bg);
-  border-top-color: var(--window_border_light);
-  border-left-color: var(--window_border_light);
-  border-right-color: var(--window_border_dark);
-  border-bottom-color: var(--window_border_dark);
-}
+// @mixin box-border() {
+//   background-color: var(--taskbar_bg);
+//   border: 2px solid var(--taskbar_bg);
+//   border-top-color: var(--window_border_light);
+//   border-left-color: var(--window_border_light);
+//   border-right-color: var(--window_border_dark);
+//   border-bottom-color: var(--window_border_dark);
+// }
 
 $breakpoints-down: (
   "extra_small": 36rem,
