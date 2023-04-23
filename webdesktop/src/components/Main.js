@@ -62,7 +62,7 @@ const Main = () => {
       <PopupWindow stackNote={stackNote} title={"Fish"} windowType={"image"}>
         <img
           src={
-            "https://i.pinimg.com/originals/33/00/37/330037e99d9692d6b6a290296a33bdca.gif"
+            "https://i.pinimg.com/originals/1f/dd/1d/1fdd1dd87c03ceb8d4af123882e9be4a.gif"
           }
           alt=""
         />

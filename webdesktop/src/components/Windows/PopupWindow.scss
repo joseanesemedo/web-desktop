@@ -20,7 +20,7 @@
     border-right-color: var(--window_border_light);
     border-bottom-color: var(--window_border_light);
     overflow-y: auto;
-    max-height: 400px;
+    // max-height: calc(100% - 10px);
 
     @include m.breakpoint-down(medium) {
       // max-width: 350px;

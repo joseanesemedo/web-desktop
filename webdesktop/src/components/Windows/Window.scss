@@ -10,6 +10,8 @@
   // top: 50%;
   width: 500px;
 
+  transition: width 0.3s;
+
   border: 2px solid var(--window_border_light);
   border-right-color: var(--window_border_dark);
   border-bottom-color: var(--window_border_dark);
