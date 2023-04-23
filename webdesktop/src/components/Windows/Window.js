@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Draggable from "react-draggable";
 import "./Window.scss";
 
-const Window = ({ title, classes, children, stackNote, windowType, x, y }) => {
+const Window = ({ title, classes, children, stackNote, windowType }) => {
   const noteRef = useRef();
 
   function handleOnClick(e) {
@@ -28,22 +28,13 @@ const Window = ({ title, classes, children, stackNote, windowType, x, y }) => {
 
   const windowImg = types.find((t) => t.type === windowType)?.src;
 
-  // let x, y;
-
-  // function getRandomInt(max) {
-  //   return Math.floor(Math.random() * max);
-  // }
-
-  // x = getRandomInt(50);
-  // y = getRandomInt(700);
-
   return (
     <Draggable
       bounds=".main"
       handle=".title__bar"
       tabIndex="-1"
       onMouseDown={handleOnClick}
-      defaultPosition={{ x: 0, y: 0 }}
+      positionOffset={{ x: "50%", y: "50%" }}
     >
       <div className={`window ${classes}`} ref={noteRef}>
         <div className="title__bar flex__center">
