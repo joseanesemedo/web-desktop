@@ -41,7 +41,7 @@
       gap: 0.0625rem;
 
       .btn {
-        padding: 1px 4px;
+        padding: 1px 2px;
         background-color: var(--window_bg);
         border: 0.125rem solid var(--btn_border_light);
         border-right-color: var(--btn_border_dark);
@@ -56,6 +56,11 @@
           border-right-color: var(--btn_border_light);
           border-bottom-color: var(--btn_border_light);
         }
+      }
+
+      .icon {
+        height: 0.6rem;
+        width: 0.6rem;
       }
     }
   }

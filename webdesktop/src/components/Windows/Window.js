@@ -56,17 +56,29 @@ const Window = ({ title, classes, children, stackNote, windowType, x, y }) => {
           <div className="buttons__container">
             {windowType === "message" ? null : (
               <>
-                <button className="btn " aria-label="close button">
-                  <span className="icon">_</span>
+                <button className="btn " aria-label="minimize button">
+                  <img
+                    src="https://assets.codepen.io/7237686/minimize.png?format=auto"
+                    alt="minimize window"
+                    className="icon"
+                  />
                 </button>
-                <button className="btn " aria-label="close button">
-                  <span className="icon">X</span>
+                <button className="btn " aria-label="maximize button">
+                  <img
+                    src="https://assets.codepen.io/7237686/maximize_1.png?format=auto"
+                    alt="maximize window"
+                    className="icon"
+                  />
                 </button>
               </>
             )}
 
             <button className="btn " aria-label="close button">
-              <span className="icon">X</span>
+              <img
+                src="https://assets.codepen.io/7237686/close.png?format=auto"
+                alt="close window"
+                className="icon"
+              />
             </button>
           </div>
         </div>
